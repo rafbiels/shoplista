@@ -1,0 +1,22 @@
+{
+  "name": "shoplista",
+  "version": "0.1.0",
+  "description": "Shopping list app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafbiels/shoplista.git"
+  },
+  "author": "Rafal Bielski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafbiels/shoplista/issues"
+  },
+  "homepage": "https://github.com/rafbiels/shoplista#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.1"
+  }
+}
