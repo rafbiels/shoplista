@@ -29,7 +29,6 @@ export const RecipeList = (/* {recipes}: Props */) => {
   }
   return (
     <div>
-      <h1>Recipe list</h1>
       <div>{recipeComps}</div>
     </div>
   );
