@@ -13,7 +13,9 @@ export const RecipeList = (/* {recipes}: Props */) => {
 
   useEffect(() => {
     console.log("useEffect called");
-    axios.get('http://localhost:5000/recipes/')
+    let url = window.location.protocol + '//' + window.location.host.split(':')[0];
+    console.log('url = '+url);
+    axios.get(url+':5000/recipes/')
       .then((response) => {
         console.log('axios received recipes');
         setRecipes(response.data);
@@ -23,7 +25,7 @@ export const RecipeList = (/* {recipes}: Props */) => {
 
   const recipeComps: JSX.Element[] = [];
   for (let r of recipes) {
-    recipeComps.push(<Recipe recipe={r} />);
+    recipeComps.push(<Recipe recipe={r} key={r.name} />);
   }
   return (
     <div>

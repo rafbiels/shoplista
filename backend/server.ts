@@ -40,7 +40,7 @@ app.use('/users/', usersRouter);
 app.use('/recipes/', recipesRouter);
 app.use('/items/', itemsRouter);
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Server is running on port: ${port}`);
   console.log(`Connection string: ${dbURL}`);
 });
