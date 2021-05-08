@@ -6,3 +6,27 @@
   min-width: 20rem;
   max-width: 30rem;
 }
+
+input.form-control {
+  font: inherit;
+}
+
+input[type=text].recipe-add {
+  border: none;
+  background-color: rgba($color: #dddddd, $alpha: 0.2);
+  border-radius: 0;
+  padding: 0.2rem;
+  margin: 0px;
+}
+
+li input.recipe-add {
+  display: inline;
+}
+
+li input.recipe-add-ingredient {
+  width: 70%;
+}
+
+li input.recipe-add-amount {
+  width: 20%;
+}

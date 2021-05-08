@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {IRecipe, Recipe} from './recipe.component'
+import {AddRecipe} from './recipe-add.component'
 import axios from 'axios'
 
 // interface Props {
@@ -29,6 +30,7 @@ export const RecipeList = (/* {recipes}: Props */) => {
   }
   return (
     <div>
+      <AddRecipe />
       <div>{recipeComps}</div>
     </div>
   );
